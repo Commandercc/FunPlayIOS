@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		243FC66327D7C64800078926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC66227D7C64800078926 /* AppDelegate.swift */; };
+		243FC66527D7C64800078926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC66427D7C64800078926 /* SceneDelegate.swift */; };
+		243FC66727D7C64800078926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC66627D7C64800078926 /* ViewController.swift */; };
+		243FC66A27D7C64800078926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243FC66827D7C64800078926 /* Main.storyboard */; };
+		243FC66C27D7C64900078926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 243FC66B27D7C64900078926 /* Assets.xcassets */; };
+		243FC66F27D7C64900078926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243FC66D27D7C64900078926 /* LaunchScreen.storyboard */; };
+		243FC68127D7C73A00078926 /* CCLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC67827D7C73A00078926 /* CCLocal.swift */; };
+		243FC68227D7C73A00078926 /* CCHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC67A27D7C73A00078926 /* CCHttp.swift */; };
+		243FC68327D7C73A00078926 /* CCLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC67B27D7C73A00078926 /* CCLog.swift */; };
+		243FC68427D7C73A00078926 /* CCUIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC67C27D7C73A00078926 /* CCUIConfig.swift */; };
+		243FC68527D7C73A00078926 /* CCNavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC67E27D7C73A00078926 /* CCNavigationTitleView.swift */; };
+		243FC68627D7C73A00078926 /* CCWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC67F27D7C73A00078926 /* CCWebView.swift */; };
+		243FC68727D7C73A00078926 /* CCActivityLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC68027D7C73A00078926 /* CCActivityLoadingView.swift */; };
+		243FC69427D7C76800078926 /* UIImage+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC68A27D7C76800078926 /* UIImage+Addition.swift */; };
+		243FC69527D7C76800078926 /* UIFont+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC68B27D7C76800078926 /* UIFont+Addition.swift */; };
+		243FC69627D7C76800078926 /* UIView+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC68C27D7C76800078926 /* UIView+Addition.swift */; };
+		243FC69727D7C76800078926 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC68D27D7C76800078926 /* Then.swift */; };
+		243FC69827D7C76800078926 /* UIViewController+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC68E27D7C76800078926 /* UIViewController+Addition.swift */; };
+		243FC69927D7C76800078926 /* CGFloat+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC69027D7C76800078926 /* CGFloat+Addition.swift */; };
+		243FC69A27D7C76800078926 /* UIColor+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC69127D7C76800078926 /* UIColor+Addition.swift */; };
+		243FC69B27D7C76800078926 /* UIImageView+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC69227D7C76800078926 /* UIImageView+Addition.swift */; };
+		243FC69F27D7C76F00078926 /* CCTableViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC69D27D7C76F00078926 /* CCTableViewItem.swift */; };
+		243FC6A027D7C76F00078926 /* CCBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC69E27D7C76F00078926 /* CCBaseViewController.swift */; };
+		243FC6A927D7CC5900078926 /* CCObjectGenerateFromClassString.m in Sources */ = {isa = PBXBuildFile; fileRef = 243FC6A827D7CC5900078926 /* CCObjectGenerateFromClassString.m */; };
+		243FC6AD27D7CE4500078926 /* FSTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC6AC27D7CE4500078926 /* FSTabBarViewController.swift */; };
+		243FC6B427D7CEFB00078926 /* FSHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC6B327D7CEFB00078926 /* FSHomeViewController.swift */; };
+		243FC6B627D7CF4000078926 /* FSProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC6B527D7CF4000078926 /* FSProjectViewController.swift */; };
+		243FC6B827D7CF5100078926 /* FSWechatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC6B727D7CF5100078926 /* FSWechatViewController.swift */; };
+		243FC6BA27D7CF6200078926 /* FSStructureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC6B927D7CF6200078926 /* FSStructureViewController.swift */; };
+		243FC6BC27D7CF6B00078926 /* FSMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC6BB27D7CF6B00078926 /* FSMineViewController.swift */; };
+		AD094257F01C2FD302D17A9B /* Pods_FunPlayIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584C53BC60F1108B348E61F9 /* Pods_FunPlayIOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01C0F6DEA2420A9895021C9E /* Pods-FunPlayIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunPlayIOS.debug.xcconfig"; path = "Target Support Files/Pods-FunPlayIOS/Pods-FunPlayIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1A589A68FF0078B96A151990 /* Pods-FunPlayIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunPlayIOS.release.xcconfig"; path = "Target Support Files/Pods-FunPlayIOS/Pods-FunPlayIOS.release.xcconfig"; sourceTree = "<group>"; };
+		243FC65F27D7C64800078926 /* FunPlayIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunPlayIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		243FC66227D7C64800078926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		243FC66427D7C64800078926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		243FC66627D7C64800078926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		243FC66927D7C64800078926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		243FC66B27D7C64900078926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		243FC66E27D7C64900078926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		243FC67027D7C64900078926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		243FC67827D7C73A00078926 /* CCLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCLocal.swift; sourceTree = "<group>"; };
+		243FC67A27D7C73A00078926 /* CCHttp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCHttp.swift; sourceTree = "<group>"; };
+		243FC67B27D7C73A00078926 /* CCLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCLog.swift; sourceTree = "<group>"; };
+		243FC67C27D7C73A00078926 /* CCUIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCUIConfig.swift; sourceTree = "<group>"; };
+		243FC67E27D7C73A00078926 /* CCNavigationTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCNavigationTitleView.swift; sourceTree = "<group>"; };
+		243FC67F27D7C73A00078926 /* CCWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWebView.swift; sourceTree = "<group>"; };
+		243FC68027D7C73A00078926 /* CCActivityLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCActivityLoadingView.swift; sourceTree = "<group>"; };
+		243FC68A27D7C76800078926 /* UIImage+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Addition.swift"; sourceTree = "<group>"; };
+		243FC68B27D7C76800078926 /* UIFont+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Addition.swift"; sourceTree = "<group>"; };
+		243FC68C27D7C76800078926 /* UIView+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Addition.swift"; sourceTree = "<group>"; };
+		243FC68D27D7C76800078926 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
+		243FC68E27D7C76800078926 /* UIViewController+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Addition.swift"; sourceTree = "<group>"; };
+		243FC69027D7C76800078926 /* CGFloat+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Addition.swift"; sourceTree = "<group>"; };
+		243FC69127D7C76800078926 /* UIColor+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Addition.swift"; sourceTree = "<group>"; };
+		243FC69227D7C76800078926 /* UIImageView+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Addition.swift"; sourceTree = "<group>"; };
+		243FC69D27D7C76F00078926 /* CCTableViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCTableViewItem.swift; sourceTree = "<group>"; };
+		243FC69E27D7C76F00078926 /* CCBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCBaseViewController.swift; sourceTree = "<group>"; };
+		243FC6A627D7CC5900078926 /* FunPlayIOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunPlayIOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		243FC6A727D7CC5900078926 /* CCObjectGenerateFromClassString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCObjectGenerateFromClassString.h; sourceTree = "<group>"; };
+		243FC6A827D7CC5900078926 /* CCObjectGenerateFromClassString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCObjectGenerateFromClassString.m; sourceTree = "<group>"; };
+		243FC6AC27D7CE4500078926 /* FSTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTabBarViewController.swift; sourceTree = "<group>"; };
+		243FC6B327D7CEFB00078926 /* FSHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSHomeViewController.swift; sourceTree = "<group>"; };
+		243FC6B527D7CF4000078926 /* FSProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSProjectViewController.swift; sourceTree = "<group>"; };
+		243FC6B727D7CF5100078926 /* FSWechatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSWechatViewController.swift; sourceTree = "<group>"; };
+		243FC6B927D7CF6200078926 /* FSStructureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSStructureViewController.swift; sourceTree = "<group>"; };
+		243FC6BB27D7CF6B00078926 /* FSMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMineViewController.swift; sourceTree = "<group>"; };
+		584C53BC60F1108B348E61F9 /* Pods_FunPlayIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunPlayIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		243FC65C27D7C64800078926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD094257F01C2FD302D17A9B /* Pods_FunPlayIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07F0A1A82A0150B290B527DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01C0F6DEA2420A9895021C9E /* Pods-FunPlayIOS.debug.xcconfig */,
+				1A589A68FF0078B96A151990 /* Pods-FunPlayIOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		243FC65627D7C64800078926 = {
+			isa = PBXGroup;
+			children = (
+				243FC66127D7C64800078926 /* FunPlayIOS */,
+				243FC66027D7C64800078926 /* Products */,
+				07F0A1A82A0150B290B527DD /* Pods */,
+				C1A789E353DED7D0D4E8BDC7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		243FC66027D7C64800078926 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				243FC65F27D7C64800078926 /* FunPlayIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		243FC66127D7C64800078926 /* FunPlayIOS */ = {
+			isa = PBXGroup;
+			children = (
+				243FC6AA27D7CD5600078926 /* ViewController */,
+				243FC6A627D7CC5900078926 /* FunPlayIOS-Bridging-Header.h */,
+				243FC67627D7C73A00078926 /* Common */,
+				243FC66227D7C64800078926 /* AppDelegate.swift */,
+				243FC66427D7C64800078926 /* SceneDelegate.swift */,
+				243FC66627D7C64800078926 /* ViewController.swift */,
+				243FC66827D7C64800078926 /* Main.storyboard */,
+				243FC66B27D7C64900078926 /* Assets.xcassets */,
+				243FC66D27D7C64900078926 /* LaunchScreen.storyboard */,
+				243FC67027D7C64900078926 /* Info.plist */,
+			);
+			path = FunPlayIOS;
+			sourceTree = "<group>";
+		};
+		243FC67627D7C73A00078926 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				243FC69C27D7C76F00078926 /* BaseUI */,
+				243FC68827D7C76800078926 /* BaseAddition */,
+				243FC67727D7C73A00078926 /* Util */,
+				243FC67927D7C73A00078926 /* NetWork */,
+				243FC67B27D7C73A00078926 /* CCLog.swift */,
+				243FC67C27D7C73A00078926 /* CCUIConfig.swift */,
+				243FC67D27D7C73A00078926 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		243FC67727D7C73A00078926 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				243FC67827D7C73A00078926 /* CCLocal.swift */,
+				243FC6A727D7CC5900078926 /* CCObjectGenerateFromClassString.h */,
+				243FC6A827D7CC5900078926 /* CCObjectGenerateFromClassString.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		243FC67927D7C73A00078926 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				243FC67A27D7C73A00078926 /* CCHttp.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		243FC67D27D7C73A00078926 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				243FC67E27D7C73A00078926 /* CCNavigationTitleView.swift */,
+				243FC67F27D7C73A00078926 /* CCWebView.swift */,
+				243FC68027D7C73A00078926 /* CCActivityLoadingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		243FC68827D7C76800078926 /* BaseAddition */ = {
+			isa = PBXGroup;
+			children = (
+				243FC68A27D7C76800078926 /* UIImage+Addition.swift */,
+				243FC68B27D7C76800078926 /* UIFont+Addition.swift */,
+				243FC68C27D7C76800078926 /* UIView+Addition.swift */,
+				243FC68D27D7C76800078926 /* Then.swift */,
+				243FC68E27D7C76800078926 /* UIViewController+Addition.swift */,
+				243FC69027D7C76800078926 /* CGFloat+Addition.swift */,
+				243FC69127D7C76800078926 /* UIColor+Addition.swift */,
+				243FC69227D7C76800078926 /* UIImageView+Addition.swift */,
+			);
+			path = BaseAddition;
+			sourceTree = "<group>";
+		};
+		243FC69C27D7C76F00078926 /* BaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				243FC69D27D7C76F00078926 /* CCTableViewItem.swift */,
+				243FC69E27D7C76F00078926 /* CCBaseViewController.swift */,
+			);
+			path = BaseUI;
+			sourceTree = "<group>";
+		};
+		243FC6AA27D7CD5600078926 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				243FC6B227D7CEE200078926 /* Mine */,
+				243FC6B127D7CECC00078926 /* Structure */,
+				243FC6B027D7CEC100078926 /* Wechat */,
+				243FC6AF27D7CEBC00078926 /* Project */,
+				243FC6AE27D7CEB300078926 /* Home */,
+				243FC6AB27D7CDC800078926 /* TabBar */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		243FC6AB27D7CDC800078926 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				243FC6AC27D7CE4500078926 /* FSTabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		243FC6AE27D7CEB300078926 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				243FC6B327D7CEFB00078926 /* FSHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		243FC6AF27D7CEBC00078926 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				243FC6B527D7CF4000078926 /* FSProjectViewController.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		243FC6B027D7CEC100078926 /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				243FC6B727D7CF5100078926 /* FSWechatViewController.swift */,
+			);
+			path = Wechat;
+			sourceTree = "<group>";
+		};
+		243FC6B127D7CECC00078926 /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				243FC6B927D7CF6200078926 /* FSStructureViewController.swift */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		243FC6B227D7CEE200078926 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				243FC6BB27D7CF6B00078926 /* FSMineViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		C1A789E353DED7D0D4E8BDC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				584C53BC60F1108B348E61F9 /* Pods_FunPlayIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		243FC65E27D7C64800078926 /* FunPlayIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 243FC67327D7C64900078926 /* Build configuration list for PBXNativeTarget "FunPlayIOS" */;
+			buildPhases = (
+				A7D2D923041F4CB6447757BF /* [CP] Check Pods Manifest.lock */,
+				243FC65B27D7C64800078926 /* Sources */,
+				243FC65C27D7C64800078926 /* Frameworks */,
+				243FC65D27D7C64800078926 /* Resources */,
+				3BB61C112AEC57AE7AF80233 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunPlayIOS;
+			productName = FunPlayIOS;
+			productReference = 243FC65F27D7C64800078926 /* FunPlayIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		243FC65727D7C64800078926 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					243FC65E27D7C64800078926 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+				};
+			};
+			buildConfigurationList = 243FC65A27D7C64800078926 /* Build configuration list for PBXProject "FunPlayIOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 243FC65627D7C64800078926;
+			productRefGroup = 243FC66027D7C64800078926 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				243FC65E27D7C64800078926 /* FunPlayIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		243FC65D27D7C64800078926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				243FC66F27D7C64900078926 /* LaunchScreen.storyboard in Resources */,
+				243FC66C27D7C64900078926 /* Assets.xcassets in Resources */,
+				243FC66A27D7C64800078926 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BB61C112AEC57AE7AF80233 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FunPlayIOS/Pods-FunPlayIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FunPlayIOS/Pods-FunPlayIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FunPlayIOS/Pods-FunPlayIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7D2D923041F4CB6447757BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FunPlayIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		243FC65B27D7C64800078926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				243FC6A027D7C76F00078926 /* CCBaseViewController.swift in Sources */,
+				243FC68327D7C73A00078926 /* CCLog.swift in Sources */,
+				243FC69A27D7C76800078926 /* UIColor+Addition.swift in Sources */,
+				243FC69427D7C76800078926 /* UIImage+Addition.swift in Sources */,
+				243FC68527D7C73A00078926 /* CCNavigationTitleView.swift in Sources */,
+				243FC68727D7C73A00078926 /* CCActivityLoadingView.swift in Sources */,
+				243FC68427D7C73A00078926 /* CCUIConfig.swift in Sources */,
+				243FC69B27D7C76800078926 /* UIImageView+Addition.swift in Sources */,
+				243FC6BC27D7CF6B00078926 /* FSMineViewController.swift in Sources */,
+				243FC66727D7C64800078926 /* ViewController.swift in Sources */,
+				243FC6B827D7CF5100078926 /* FSWechatViewController.swift in Sources */,
+				243FC68127D7C73A00078926 /* CCLocal.swift in Sources */,
+				243FC6A927D7CC5900078926 /* CCObjectGenerateFromClassString.m in Sources */,
+				243FC6AD27D7CE4500078926 /* FSTabBarViewController.swift in Sources */,
+				243FC69927D7C76800078926 /* CGFloat+Addition.swift in Sources */,
+				243FC66327D7C64800078926 /* AppDelegate.swift in Sources */,
+				243FC69F27D7C76F00078926 /* CCTableViewItem.swift in Sources */,
+				243FC68627D7C73A00078926 /* CCWebView.swift in Sources */,
+				243FC68227D7C73A00078926 /* CCHttp.swift in Sources */,
+				243FC6B427D7CEFB00078926 /* FSHomeViewController.swift in Sources */,
+				243FC6BA27D7CF6200078926 /* FSStructureViewController.swift in Sources */,
+				243FC69527D7C76800078926 /* UIFont+Addition.swift in Sources */,
+				243FC69627D7C76800078926 /* UIView+Addition.swift in Sources */,
+				243FC69727D7C76800078926 /* Then.swift in Sources */,
+				243FC69827D7C76800078926 /* UIViewController+Addition.swift in Sources */,
+				243FC66527D7C64800078926 /* SceneDelegate.swift in Sources */,
+				243FC6B627D7CF4000078926 /* FSProjectViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		243FC66827D7C64800078926 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				243FC66927D7C64800078926 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		243FC66D27D7C64900078926 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				243FC66E27D7C64900078926 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		243FC67127D7C64900078926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "
+";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		243FC67227D7C64900078926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "
+";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		243FC67427D7C64900078926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01C0F6DEA2420A9895021C9E /* Pods-FunPlayIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6AT6P6L7SF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FunPlayIOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccc.FunPlayIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FunPlayIOS/FunPlayIOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		243FC67527D7C64900078926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A589A68FF0078B96A151990 /* Pods-FunPlayIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6AT6P6L7SF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FunPlayIOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccc.FunPlayIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FunPlayIOS/FunPlayIOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		243FC65A27D7C64800078926 /* Build configuration list for PBXProject "FunPlayIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				243FC67127D7C64900078926 /* Debug */,
+				243FC67227D7C64900078926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		243FC67327D7C64900078926 /* Build configuration list for PBXNativeTarget "FunPlayIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				243FC67427D7C64900078926 /* Debug */,
+				243FC67527D7C64900078926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 243FC65727D7C64800078926 /* Project object */;
+}

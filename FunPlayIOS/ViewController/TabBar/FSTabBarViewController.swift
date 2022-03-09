@@ -12,7 +12,7 @@ class FSTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initTab()
-        UITabBar.appearance().tintColor = UIColor.red.withAlphaComponent(0.5)
+        UITabBar.appearance().tintColor = UIColor.xEB0029.alpha(0.6)
     }
     
     private func initTab() {

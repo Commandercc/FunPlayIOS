@@ -37,6 +37,13 @@
 		243FC6B827D7CF5100078926 /* FSWechatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC6B727D7CF5100078926 /* FSWechatViewController.swift */; };
 		243FC6BA27D7CF6200078926 /* FSStructureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC6B927D7CF6200078926 /* FSStructureViewController.swift */; };
 		243FC6BC27D7CF6B00078926 /* FSMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC6BB27D7CF6B00078926 /* FSMineViewController.swift */; };
+		2455BC5A27DA46F100A3972E /* FSMineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2455BC5927DA46F100A3972E /* FSMineHeaderView.swift */; };
+		2455BC5D27DA540E00A3972E /* FSUserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2455BC5C27DA540E00A3972E /* FSUserInfoModel.swift */; };
+		2455BC6127DA560700A3972E /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2455BC6027DA560700A3972E /* BaseResponse.swift */; };
+		2455BC6427DA5A1100A3972E /* FSMineInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2455BC6327DA5A1100A3972E /* FSMineInfoViewModel.swift */; };
+		2455BC6727DA5A5A00A3972E /* FSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2455BC6627DA5A5A00A3972E /* FSConfig.swift */; };
+		2455BC6A27DA610800A3972E /* FSMineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2455BC6927DA610800A3972E /* FSMineService.swift */; };
+		2455BC6C27DA61AA00A3972E /* FS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2455BC6B27DA61AA00A3972E /* FS.swift */; };
 		AD094257F01C2FD302D17A9B /* Pods_FunPlayIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584C53BC60F1108B348E61F9 /* Pods_FunPlayIOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +84,13 @@
 		243FC6B727D7CF5100078926 /* FSWechatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSWechatViewController.swift; sourceTree = "<group>"; };
 		243FC6B927D7CF6200078926 /* FSStructureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSStructureViewController.swift; sourceTree = "<group>"; };
 		243FC6BB27D7CF6B00078926 /* FSMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMineViewController.swift; sourceTree = "<group>"; };
+		2455BC5927DA46F100A3972E /* FSMineHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMineHeaderView.swift; sourceTree = "<group>"; };
+		2455BC5C27DA540E00A3972E /* FSUserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSUserInfoModel.swift; sourceTree = "<group>"; };
+		2455BC6027DA560700A3972E /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		2455BC6327DA5A1100A3972E /* FSMineInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMineInfoViewModel.swift; sourceTree = "<group>"; };
+		2455BC6627DA5A5A00A3972E /* FSConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSConfig.swift; sourceTree = "<group>"; };
+		2455BC6927DA610800A3972E /* FSMineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMineService.swift; sourceTree = "<group>"; };
+		2455BC6B27DA61AA00A3972E /* FS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FS.swift; sourceTree = "<group>"; };
 		584C53BC60F1108B348E61F9 /* Pods_FunPlayIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunPlayIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -122,6 +136,8 @@
 		243FC66127D7C64800078926 /* FunPlayIOS */ = {
 			isa = PBXGroup;
 			children = (
+				2455BC6527DA5A4A00A3972E /* Config */,
+				2455BC5E27DA55E700A3972E /* Service */,
 				243FC6AA27D7CD5600078926 /* ViewController */,
 				243FC6A627D7CC5900078926 /* FunPlayIOS-Bridging-Header.h */,
 				243FC67627D7C73A00078926 /* Common */,
@@ -258,7 +274,68 @@
 		243FC6B227D7CEE200078926 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				2455BC6227DA59FA00A3972E /* ViewModel */,
+				2455BC5B27DA53F700A3972E /* Model */,
+				2455BC5827DA46C700A3972E /* View */,
 				243FC6BB27D7CF6B00078926 /* FSMineViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		2455BC5827DA46C700A3972E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2455BC5927DA46F100A3972E /* FSMineHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2455BC5B27DA53F700A3972E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2455BC5C27DA540E00A3972E /* FSUserInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2455BC5E27DA55E700A3972E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2455BC6827DA60EE00A3972E /* Mine */,
+				2455BC5F27DA55F100A3972E /* NetWork */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2455BC5F27DA55F100A3972E /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				2455BC6027DA560700A3972E /* BaseResponse.swift */,
+				2455BC6B27DA61AA00A3972E /* FS.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		2455BC6227DA59FA00A3972E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2455BC6327DA5A1100A3972E /* FSMineInfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2455BC6527DA5A4A00A3972E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2455BC6627DA5A5A00A3972E /* FSConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2455BC6827DA60EE00A3972E /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				2455BC6927DA610800A3972E /* FSMineService.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -398,19 +475,26 @@
 				243FC6BC27D7CF6B00078926 /* FSMineViewController.swift in Sources */,
 				243FC66727D7C64800078926 /* ViewController.swift in Sources */,
 				243FC6B827D7CF5100078926 /* FSWechatViewController.swift in Sources */,
+				2455BC6427DA5A1100A3972E /* FSMineInfoViewModel.swift in Sources */,
 				243FC68127D7C73A00078926 /* CCLocal.swift in Sources */,
 				243FC6A927D7CC5900078926 /* CCObjectGenerateFromClassString.m in Sources */,
 				243FC6AD27D7CE4500078926 /* FSTabBarViewController.swift in Sources */,
 				243FC69927D7C76800078926 /* CGFloat+Addition.swift in Sources */,
+				2455BC6127DA560700A3972E /* BaseResponse.swift in Sources */,
 				243FC66327D7C64800078926 /* AppDelegate.swift in Sources */,
 				243FC69F27D7C76F00078926 /* CCTableViewItem.swift in Sources */,
 				243FC68627D7C73A00078926 /* CCWebView.swift in Sources */,
+				2455BC6C27DA61AA00A3972E /* FS.swift in Sources */,
+				2455BC5D27DA540E00A3972E /* FSUserInfoModel.swift in Sources */,
 				243FC68227D7C73A00078926 /* CCHttp.swift in Sources */,
+				2455BC5A27DA46F100A3972E /* FSMineHeaderView.swift in Sources */,
 				243FC6B427D7CEFB00078926 /* FSHomeViewController.swift in Sources */,
+				2455BC6727DA5A5A00A3972E /* FSConfig.swift in Sources */,
 				243FC6BA27D7CF6200078926 /* FSStructureViewController.swift in Sources */,
 				243FC69527D7C76800078926 /* UIFont+Addition.swift in Sources */,
 				243FC69627D7C76800078926 /* UIView+Addition.swift in Sources */,
 				243FC69727D7C76800078926 /* Then.swift in Sources */,
+				2455BC6A27DA610800A3972E /* FSMineService.swift in Sources */,
 				243FC69827D7C76800078926 /* UIViewController+Addition.swift in Sources */,
 				243FC66527D7C64800078926 /* SceneDelegate.swift in Sources */,
 				243FC6B627D7CF4000078926 /* FSProjectViewController.swift in Sources */,

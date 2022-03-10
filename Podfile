@@ -12,7 +12,7 @@ target 'FunPlayIOS' do
   
   pod 'Toast-Swift', '~> 5.0.1'
   
-  pod 'SwiftyJSON', '~> 5.0'
+  pod 'HandyJSON', '~> 5.0.2'
   
   pod 'MJRefresh', '~> 3.7.5'
 

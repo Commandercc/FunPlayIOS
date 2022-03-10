@@ -78,6 +78,7 @@ extension UIColor {
     static var x67C1FF: UIColor { return UIColor.HEXCOLOR(0x67c1ff) }
     static var x6EADFF: UIColor { return UIColor.HEXCOLOR(0x6eadff) }
     static var x6F7684: UIColor { return UIColor.HEXCOLOR(0x6f7684) }
+    static var x707070: UIColor { return UIColor.HEXCOLOR(0x707070) }
     static var x714100: UIColor { return UIColor.HEXCOLOR(0x714100) }
     static var x737373: UIColor { return UIColor.HEXCOLOR(0x737373) }
     static var x777777: UIColor { return UIColor.HEXCOLOR(0x777777) }

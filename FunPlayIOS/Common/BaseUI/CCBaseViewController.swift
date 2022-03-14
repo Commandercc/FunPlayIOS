@@ -9,9 +9,11 @@ import Foundation
 import UIKit
 
 public class CCBaseViewController: UIViewController {
-    
+    let loadingView = CCActivityLoadingView(frame: CGRect(x: 0, y: 0, width: .screenWidth, height: .screenHeight))
+
     init() {
         super.init(nibName: nil, bundle: nil)
+        self.view.addSubview(loadingView)
     }
     
     required init?(coder: NSCoder) {

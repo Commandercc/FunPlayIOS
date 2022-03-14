@@ -8,7 +8,7 @@
 import Foundation
 import HandyJSON
 
-struct BaseResponse<T>: HandyJSON {
+struct BaseResponse<T: Codable>: Codable {
     var errorCode : Int?    //服务返回码
     var errorMsg : String?
     var data : T?

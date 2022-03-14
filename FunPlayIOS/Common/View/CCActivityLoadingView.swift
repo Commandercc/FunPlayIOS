@@ -37,14 +37,6 @@ class CCActivityLoadingView: UIView {
         self.isHidden = true
         self.activityView.stopAnimating()
     }
-    
-    func startAnimating() {
-        self.startAnimating()
-    }
-    
-    func stopAnimating() {
-        self.stopAnimating()
-    }
 }
 
 

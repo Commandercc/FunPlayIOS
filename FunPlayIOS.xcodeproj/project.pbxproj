@@ -37,13 +37,19 @@
 		243FC6B827D7CF5100078926 /* FSWechatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC6B727D7CF5100078926 /* FSWechatViewController.swift */; };
 		243FC6BA27D7CF6200078926 /* FSStructureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC6B927D7CF6200078926 /* FSStructureViewController.swift */; };
 		243FC6BC27D7CF6B00078926 /* FSMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC6BB27D7CF6B00078926 /* FSMineViewController.swift */; };
+		2451C3E727DE499F00359BD9 /* FSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2451C3E627DE499F00359BD9 /* FSLoginViewController.swift */; };
+		2451C3E927DE588A00359BD9 /* FSLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2451C3E827DE588A00359BD9 /* FSLoginViewModel.swift */; };
+		2451C3EB27DE639200359BD9 /* FSUserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2451C3EA27DE639200359BD9 /* FSUserInfoModel.swift */; };
 		2455BC5A27DA46F100A3972E /* FSMineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2455BC5927DA46F100A3972E /* FSMineHeaderView.swift */; };
-		2455BC5D27DA540E00A3972E /* FSUserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2455BC5C27DA540E00A3972E /* FSUserInfoModel.swift */; };
+		2455BC5D27DA540E00A3972E /* FSLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2455BC5C27DA540E00A3972E /* FSLoginModel.swift */; };
 		2455BC6127DA560700A3972E /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2455BC6027DA560700A3972E /* BaseResponse.swift */; };
 		2455BC6427DA5A1100A3972E /* FSMineInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2455BC6327DA5A1100A3972E /* FSMineInfoViewModel.swift */; };
 		2455BC6727DA5A5A00A3972E /* FSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2455BC6627DA5A5A00A3972E /* FSConfig.swift */; };
 		2455BC6A27DA610800A3972E /* FSMineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2455BC6927DA610800A3972E /* FSMineService.swift */; };
 		2455BC6C27DA61AA00A3972E /* FS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2455BC6B27DA61AA00A3972E /* FS.swift */; };
+		245FE28E27DF7A1C00CFA88F /* CCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245FE28D27DF7A1C00CFA88F /* CCTableViewController.swift */; };
+		245FE29027DF7C6700CFA88F /* FSMineSettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245FE28F27DF7C6700CFA88F /* FSMineSettingItem.swift */; };
+		245FE29227DF7CF800CFA88F /* FSMineSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245FE29127DF7CF800CFA88F /* FSMineSettingModel.swift */; };
 		AD094257F01C2FD302D17A9B /* Pods_FunPlayIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584C53BC60F1108B348E61F9 /* Pods_FunPlayIOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,13 +90,19 @@
 		243FC6B727D7CF5100078926 /* FSWechatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSWechatViewController.swift; sourceTree = "<group>"; };
 		243FC6B927D7CF6200078926 /* FSStructureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSStructureViewController.swift; sourceTree = "<group>"; };
 		243FC6BB27D7CF6B00078926 /* FSMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMineViewController.swift; sourceTree = "<group>"; };
+		2451C3E627DE499F00359BD9 /* FSLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSLoginViewController.swift; sourceTree = "<group>"; };
+		2451C3E827DE588A00359BD9 /* FSLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSLoginViewModel.swift; sourceTree = "<group>"; };
+		2451C3EA27DE639200359BD9 /* FSUserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSUserInfoModel.swift; sourceTree = "<group>"; };
 		2455BC5927DA46F100A3972E /* FSMineHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMineHeaderView.swift; sourceTree = "<group>"; };
-		2455BC5C27DA540E00A3972E /* FSUserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSUserInfoModel.swift; sourceTree = "<group>"; };
+		2455BC5C27DA540E00A3972E /* FSLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSLoginModel.swift; sourceTree = "<group>"; };
 		2455BC6027DA560700A3972E /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		2455BC6327DA5A1100A3972E /* FSMineInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMineInfoViewModel.swift; sourceTree = "<group>"; };
 		2455BC6627DA5A5A00A3972E /* FSConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSConfig.swift; sourceTree = "<group>"; };
 		2455BC6927DA610800A3972E /* FSMineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMineService.swift; sourceTree = "<group>"; };
 		2455BC6B27DA61AA00A3972E /* FS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FS.swift; sourceTree = "<group>"; };
+		245FE28D27DF7A1C00CFA88F /* CCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTableViewController.swift; sourceTree = "<group>"; };
+		245FE28F27DF7C6700CFA88F /* FSMineSettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMineSettingItem.swift; sourceTree = "<group>"; };
+		245FE29127DF7CF800CFA88F /* FSMineSettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMineSettingModel.swift; sourceTree = "<group>"; };
 		584C53BC60F1108B348E61F9 /* Pods_FunPlayIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunPlayIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -214,6 +226,7 @@
 			children = (
 				243FC69D27D7C76F00078926 /* CCTableViewItem.swift */,
 				243FC69E27D7C76F00078926 /* CCBaseViewController.swift */,
+				245FE28D27DF7A1C00CFA88F /* CCTableViewController.swift */,
 			);
 			path = BaseUI;
 			sourceTree = "<group>";
@@ -274,6 +287,7 @@
 		243FC6B227D7CEE200078926 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				2451C3E527DE498400359BD9 /* VC */,
 				2455BC6227DA59FA00A3972E /* ViewModel */,
 				2455BC5B27DA53F700A3972E /* Model */,
 				2455BC5827DA46C700A3972E /* View */,
@@ -282,10 +296,19 @@
 			path = Mine;
 			sourceTree = "<group>";
 		};
+		2451C3E527DE498400359BD9 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				2451C3E627DE499F00359BD9 /* FSLoginViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		2455BC5827DA46C700A3972E /* View */ = {
 			isa = PBXGroup;
 			children = (
 				2455BC5927DA46F100A3972E /* FSMineHeaderView.swift */,
+				245FE28F27DF7C6700CFA88F /* FSMineSettingItem.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,7 +316,9 @@
 		2455BC5B27DA53F700A3972E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2455BC5C27DA540E00A3972E /* FSUserInfoModel.swift */,
+				2455BC5C27DA540E00A3972E /* FSLoginModel.swift */,
+				2451C3EA27DE639200359BD9 /* FSUserInfoModel.swift */,
+				245FE29127DF7CF800CFA88F /* FSMineSettingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				2455BC6327DA5A1100A3972E /* FSMineInfoViewModel.swift */,
+				2451C3E827DE588A00359BD9 /* FSLoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -467,17 +493,21 @@
 				243FC6A027D7C76F00078926 /* CCBaseViewController.swift in Sources */,
 				243FC68327D7C73A00078926 /* CCLog.swift in Sources */,
 				243FC69A27D7C76800078926 /* UIColor+Addition.swift in Sources */,
+				245FE28E27DF7A1C00CFA88F /* CCTableViewController.swift in Sources */,
+				245FE29227DF7CF800CFA88F /* FSMineSettingModel.swift in Sources */,
 				243FC69427D7C76800078926 /* UIImage+Addition.swift in Sources */,
 				243FC68527D7C73A00078926 /* CCNavigationTitleView.swift in Sources */,
 				243FC68727D7C73A00078926 /* CCActivityLoadingView.swift in Sources */,
 				243FC68427D7C73A00078926 /* CCUIConfig.swift in Sources */,
 				243FC69B27D7C76800078926 /* UIImageView+Addition.swift in Sources */,
 				243FC6BC27D7CF6B00078926 /* FSMineViewController.swift in Sources */,
+				2451C3E727DE499F00359BD9 /* FSLoginViewController.swift in Sources */,
 				243FC66727D7C64800078926 /* ViewController.swift in Sources */,
 				243FC6B827D7CF5100078926 /* FSWechatViewController.swift in Sources */,
 				2455BC6427DA5A1100A3972E /* FSMineInfoViewModel.swift in Sources */,
 				243FC68127D7C73A00078926 /* CCLocal.swift in Sources */,
 				243FC6A927D7CC5900078926 /* CCObjectGenerateFromClassString.m in Sources */,
+				2451C3E927DE588A00359BD9 /* FSLoginViewModel.swift in Sources */,
 				243FC6AD27D7CE4500078926 /* FSTabBarViewController.swift in Sources */,
 				243FC69927D7C76800078926 /* CGFloat+Addition.swift in Sources */,
 				2455BC6127DA560700A3972E /* BaseResponse.swift in Sources */,
@@ -485,7 +515,7 @@
 				243FC69F27D7C76F00078926 /* CCTableViewItem.swift in Sources */,
 				243FC68627D7C73A00078926 /* CCWebView.swift in Sources */,
 				2455BC6C27DA61AA00A3972E /* FS.swift in Sources */,
-				2455BC5D27DA540E00A3972E /* FSUserInfoModel.swift in Sources */,
+				2455BC5D27DA540E00A3972E /* FSLoginModel.swift in Sources */,
 				243FC68227D7C73A00078926 /* CCHttp.swift in Sources */,
 				2455BC5A27DA46F100A3972E /* FSMineHeaderView.swift in Sources */,
 				243FC6B427D7CEFB00078926 /* FSHomeViewController.swift in Sources */,
@@ -497,7 +527,9 @@
 				2455BC6A27DA610800A3972E /* FSMineService.swift in Sources */,
 				243FC69827D7C76800078926 /* UIViewController+Addition.swift in Sources */,
 				243FC66527D7C64800078926 /* SceneDelegate.swift in Sources */,
+				2451C3EB27DE639200359BD9 /* FSUserInfoModel.swift in Sources */,
 				243FC6B627D7CF4000078926 /* FSProjectViewController.swift in Sources */,
+				245FE29027DF7C6700CFA88F /* FSMineSettingItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

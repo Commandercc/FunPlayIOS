@@ -7,12 +7,13 @@
 
 import Foundation
 
-class CCLog {
-    init(_ log: Any) {
+class CC {
+    
+    static func log(_ log: Any) {
         print(log)
     }
-    
-    init(_ tag: String, _ log: Any) {
+
+    static func log(_ tag: String, _ log: Any) {
         print("\(tag): \(log)")
     }
 }

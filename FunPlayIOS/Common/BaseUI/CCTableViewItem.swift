@@ -8,12 +8,13 @@
 import Foundation
 import UIKit
 
-class CCTableViewItem {
+class CCTableViewItem: NSObject {
     var cellHeight: CGFloat = 0
-    var cellClassName: String = ""
+    var cellClassName: String = ""   // eg: FunPlayIOS.FSMineSettingCell
     
-    init() {
-        cellClassName = "thunder.\(type(of: self))".replacingOccurrences(of: "Item", with: "Cell")
+    override init() {
+        super.init()
+        cellClassName = NSStringFromClass(type(of: self)).replacingOccurrences(of: "Item", with: "Cell")
     }
 }
 

@@ -13,10 +13,10 @@ class FSMineHeaderView: UIView {
         $0.layer.masksToBounds = true
         $0.layer.cornerRadius = 32.0
     }
-    let toLogin = UILabel(frame: .zero).then {
-        $0.text = "立即登录"
-        $0.font = .titleFont
-        $0.textColor = .black
+    let toLogin = UIButton(frame: .zero).then {
+        $0.setTitle("立即登录", for: .normal)
+        $0.setTitleColor(UIColor.black, for: .normal)
+        $0.titleLabel?.font = .titleFont
         $0.isHidden = true
     }
     let infoView = UIView(frame: .zero)
@@ -46,7 +46,7 @@ class FSMineHeaderView: UIView {
         infoView.addSubview(score)
         
         imageView.snp.makeConstraints { make in
-            make.bottom.equalToSuperview().offset(-60)
+            make.bottom.equalToSuperview().offset(-30)
             make.left.equalToSuperview().offset(15)
             make.width.equalTo(64)
             make.height.equalTo(64)

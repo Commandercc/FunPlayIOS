@@ -2,15 +2,14 @@
 //  FSUserInfoModel.swift
 //  FunPlayIOS
 //
-//  Created by zhengxu on 2022/3/10.
+//  Created by zhengxu on 2022/3/14.
 //
 
 import Foundation
-import HandyJSON
 
-struct FSUserInfoModel: HandyJSON {
+struct FSUserInfoModel: Codable {
+    var coinCount: Int = 0
+    var rank: String = ""
+    var userId: Int = 0
     var username: String = ""
-    var nickname: String = ""
-    var id: Int = 0
-    var coinCount: Int = 0 //积分
 }

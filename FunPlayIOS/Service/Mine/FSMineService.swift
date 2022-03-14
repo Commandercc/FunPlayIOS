@@ -10,7 +10,11 @@ import Alamofire
 
 class FSMineService {
     
-    static func login(params:[String: Any], success: @escaping (FSUserInfoModel?) -> Void, error: @escaping (String?) -> Void) {
-        FS.fetch(path: "/user/login", method: .post, params: params, success: success, error: error)
+    static func login(params:[String: Any], finish: @escaping (_ result: FSLoginModel?, _ error: String?) -> Void) {
+        FS.fetch(path: "/user/login", method: .post, params: params, finish: finish)
+    }
+    
+    static func getUserInfo(finish: @escaping (_ result: FSUserInfoModel?, _ error: String?) -> Void) {
+        FS.fetch(path: "/lg/coin/userinfo/json", method: .get, finish: finish)
     }
 }

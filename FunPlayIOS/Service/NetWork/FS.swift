@@ -7,29 +7,50 @@
 
 import Foundation
 import Alamofire
-import HandyJSON
 
 let baseUrl = "https://www.wanandroid.com"
 
+typealias finish<T> = (_ result: T?, _ error: String?) -> Void
+
 class FS {
     
-    static func fetch<T>(path: String, method: HTTPMethod = .get, params: [String: Any]?, success: @escaping (_ result: T?) -> (), error: @escaping (_ error: String?) -> ()) {
+    static func fetch<T: Codable>(path: String, method: HTTPMethod = .get, params: [String: Any]?, finish: @escaping finish<T>) {
         let desPath: String = baseUrl + path
         if let urlPath = URL(string: desPath) {
             let request = AF.request(urlPath, method: method, parameters: params, encoding: URLEncoding.default)
-            request.responseJSON { response in
-                guard let data = response.value else {
-                    error(response.error?.errorDescription ?? "请求错误")
-                    CCLog("请求失败 \(response.error?.errorDescription)")
-                    return
+            request.responseDecodable(of: BaseResponse<T>.self) { res in
+                switch res.result {
+                case .success(let base):
+                    CC.log("success", base)
+                    if base.errorCode == 0 {
+                        finish(base.data, nil)
+                    } else {
+                        finish(nil, base.errorMsg)
+                    }
+                case .failure(let error):
+                    CC.log("error", error.errorDescription ?? "")
+                    finish(nil, error.errorDescription)
                 }
-                let result = JSONDeserializer<BaseResponse<T>>.deserializeFrom(dict: data as? [String: Any])
-                if result?.errorCode == 0 {
-                    success(result?.data)
-                    CCLog("请求成功")
-                } else {
-                    error(result?.errorMsg)
-                    CCLog("请求失败")
+            }
+        }
+    }
+    
+    static func fetch<T: Codable>(path: String, method: HTTPMethod = .get, finish: @escaping finish<T>) {
+        let desPath: String = baseUrl + path
+        if let urlPath = URL(string: desPath) {
+            let request = AF.request(urlPath, method: method, encoding: URLEncoding.default)
+            request.responseDecodable(of: BaseResponse<T>.self) { res in
+                switch res.result {
+                case .success(let base):
+                    CC.log("success", base)
+                    if base.errorCode == 0 {
+                        finish(base.data, nil)
+                    } else {
+                        finish(nil, base.errorMsg)
+                    }
+                case .failure(let error):
+                    CC.log("error", error.errorDescription ?? "")
+                    finish(nil, error.errorDescription)
                 }
             }
         }

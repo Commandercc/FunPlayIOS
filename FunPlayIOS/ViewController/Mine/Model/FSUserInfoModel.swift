@@ -12,4 +12,5 @@ struct FSUserInfoModel: Codable {
     var rank: String = ""
     var userId: Int = 0
     var username: String = ""
+    var image: String?
 }

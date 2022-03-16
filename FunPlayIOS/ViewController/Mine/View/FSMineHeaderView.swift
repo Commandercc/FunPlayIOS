@@ -74,7 +74,11 @@ class FSMineHeaderView: UIView {
     }
     
     func updateValues(model: FSUserInfoModel) {
-        self.name.text = model.username
-        self.score.text = String(model.coinCount)
+        if model.image == nil {
+            let img = "https://avatar.csdnimg.cn/8/A/C/2_cjava___1568791139.jpg"
+            self.imageView.setImage(url: img, imgSize: CGSize(width: 64, height: 64))
+        }
+        self.name.text = CCLocal.fetchValue(key: FSConfig.userKey) as? String ?? model.username
+        self.score.text = "积分: " + String(model.coinCount)
     }
 }

@@ -36,14 +36,6 @@ class FSMineViewController: CCTableViewController {
     }
     
     private func setupViews() {
-//        self.view.addSubview(headerView)
-//
-//        headerView.snp.makeConstraints { make in
-//            make.top.equalToSuperview()
-//            make.left.equalToSuperview()
-//            make.right.equalToSuperview()
-//            make.height.equalTo(CGFloat.screenHeight / 4)
-//        }
         
         headerView.toLogin.reactive.pressed = CocoaAction(Action<(), (), Error> { [weak self] _ in
             let vc = FSLoginViewController()
@@ -53,18 +45,18 @@ class FSMineViewController: CCTableViewController {
     }
     
     private func bindViewModel() {
-        self.viewModel.userStateProperty.producer.startWithValues { [weak self] state in
+        self.viewModel.checkUserStateClosure = { [weak self] state in
             guard let self = self else { return }
-            if !state {
-                self.view.makeToast("请登录", position: .center)
-                self.headerView.toLogin.isHidden = false
-                self.headerView.infoView.isHidden = true
-            } else {
-                self.view.makeToast("获取信息", duration: 1.5, position: .center)
+            if state {
                 self.headerView.toLogin.isHidden = true
                 self.headerView.infoView.isHidden = false
                 self.loadingView.startLoding()
                 self.viewModel.getUserInfo()
+            } else {
+                self.headerView.toLogin.isHidden = false
+                self.headerView.infoView.isHidden = true
+                //self.view.makeToast("立即登录", position: .center)
+                self.tableView.reloadData()
             }
         }
         
@@ -78,8 +70,17 @@ class FSMineViewController: CCTableViewController {
     private func bindTableView() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.tableHeaderView = self.headerView
-        self.headerView.height = .screenHeight / 4
+        self.tableView.separatorStyle = .none
+        let header = UIView(frame: CGRect(x: 0, y: 0, width: .screenWidth, height: .screenHeight / 8))
+        header.addSubview(headerView)
+        headerView.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.bottom.equalToSuperview()
+            make.left.equalToSuperview()
+            make.width.equalTo(CGFloat.screenWidth)
+        }
+        self.tableView.tableHeaderView = header
+        // 直接把headerview 作为tableHeaderView 有约束问题 https://blog.csdn.net/csdn2314/article/details/102551597   https://lengmolehongyan.github.io/blog/2016/03/26/tableview-layoutconstraints-conflict/
         
         self.viewModel.loadClosure = { [weak self] in
             guard let self = self else { return }
@@ -107,8 +108,18 @@ extension FSMineViewController: UITableViewDelegate, UITableViewDataSource {
             cell = CCObjectGenerateFromClassString.createObjectGenerate(fromClassString: item.cellClassName) as? CCTableViewCell
         }
         cell?.item = item
+        cell?.selectionStyle = .none
         return cell ?? CCTableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let item = self.viewModel.cellItems[indexPath.row] as? FSMineSettingItem {
+            if item.model?.title == "退出登录" {
+                CCLocal.removeValue(key: FSConfig.userKey)
+                self.viewModel.checkUserState()
+            }
+        }
+        
+    }
     
 }

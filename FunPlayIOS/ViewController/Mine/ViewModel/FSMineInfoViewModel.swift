@@ -11,8 +11,8 @@ import ReactiveSwift
 class FSMineInfoViewModel {
     
     var loadClosure: (() -> Void)?
+    var checkUserStateClosure: ((Bool) -> Void)?
     
-    private(set) var userStateProperty: MutableProperty<Bool> = MutableProperty(false)
     private(set) var userInfoProperty: MutableProperty<FSUserInfoModel?> = MutableProperty(nil)
     private(set) var cellItems: [CCTableViewItem] = []
     
@@ -22,10 +22,11 @@ class FSMineInfoViewModel {
     }
     
     func checkUserState() {
+        self.cellItems.removeAll()
         if let _ = CCLocal.fetchValue(key: FSConfig.userKey) {
-            userStateProperty.value = true
+            self.checkUserStateClosure?(true)
         } else {
-            userStateProperty.value = false
+            self.checkUserStateClosure?(false)
         }
     }
     
@@ -48,7 +49,7 @@ class FSMineInfoViewModel {
     
     func generateSettingData() {
         self.cellItems.removeAll()
-        let titles: [String] = ["我的收藏", "我的积分", "排行榜"]
+        let titles: [String] = ["我的收藏", "我的积分", "排行榜", "退出登录"]
         titles.forEach { str in
             var model = FSMineSettingModel()
             model.title = str

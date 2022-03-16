@@ -76,6 +76,7 @@ class FSLoginViewController: CCBaseViewController {
         
         loginBtn.reactive.pressed = CocoaAction(Action<(), (), Error> { [weak self] in
             guard let self = self else { return .empty }
+            self.loadingView.startLoding()
             self.viewModel.login(username: self.username.text ?? "", password: self.password.text ?? "")
             return .empty
         })
@@ -84,11 +85,13 @@ class FSLoginViewController: CCBaseViewController {
     private func bindViewModel() {
         self.viewModel.loadClosure = { [weak self] str in
             guard let self = self else { return }
+            self.loadingView.stopLoading()
             if !str.isEmpty {
                 self.view.makeToast("error: " + str, position: .center)
             } else {
                 self.view.makeToast("登录成功")
-                self.dismiss(animated: true, completion: nil)
+                //self.dismiss(animated: true, completion: nil)
+                self.navigationController?.popViewController(animated: true)
             }
         }
     }

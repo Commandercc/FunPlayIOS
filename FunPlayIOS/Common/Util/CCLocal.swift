@@ -16,4 +16,8 @@ class CCLocal: NSObject {
     static func fetchValue(key: String) -> Any? {
         UserDefaults.standard.object(forKey: key)
     }
+    
+    static func removeValue(key: String) {
+        UserDefaults.standard.removeObject(forKey: key)
+    }
 }

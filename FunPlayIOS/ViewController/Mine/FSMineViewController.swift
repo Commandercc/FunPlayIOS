@@ -116,6 +116,7 @@ extension FSMineViewController: UITableViewDelegate, UITableViewDataSource {
         if let item = self.viewModel.cellItems[indexPath.row] as? FSMineSettingItem {
             if item.model?.title == "退出登录" {
                 CCLocal.removeValue(key: FSConfig.userKey)
+                self.viewModel.resetCellItems()
                 self.viewModel.checkUserState()
             }
         }

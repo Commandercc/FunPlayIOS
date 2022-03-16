@@ -22,7 +22,6 @@ class FSMineInfoViewModel {
     }
     
     func checkUserState() {
-        self.cellItems.removeAll()
         if let _ = CCLocal.fetchValue(key: FSConfig.userKey) {
             self.checkUserStateClosure?(true)
         } else {
@@ -60,4 +59,7 @@ class FSMineInfoViewModel {
         }
     }
     
+    func resetCellItems() {
+        self.cellItems.removeAll()
+    }
 }

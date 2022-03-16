@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243ACF1027E24965003EC7A2 /* FSWechatTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ACF0F27E24965003EC7A2 /* FSWechatTagModel.swift */; };
+		243ACF1327E249FC003EC7A2 /* FSWechatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ACF1227E249FC003EC7A2 /* FSWechatService.swift */; };
+		243ACF1627E24A85003EC7A2 /* FSWechatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ACF1527E24A85003EC7A2 /* FSWechatViewModel.swift */; };
+		243ACF1927E2556A003EC7A2 /* FSWechatTagFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243ACF1827E2556A003EC7A2 /* FSWechatTagFilterView.swift */; };
 		243FC66327D7C64800078926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC66227D7C64800078926 /* AppDelegate.swift */; };
 		243FC66527D7C64800078926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC66427D7C64800078926 /* SceneDelegate.swift */; };
 		243FC66727D7C64800078926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243FC66627D7C64800078926 /* ViewController.swift */; };
@@ -56,6 +60,10 @@
 /* Begin PBXFileReference section */
 		01C0F6DEA2420A9895021C9E /* Pods-FunPlayIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunPlayIOS.debug.xcconfig"; path = "Target Support Files/Pods-FunPlayIOS/Pods-FunPlayIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1A589A68FF0078B96A151990 /* Pods-FunPlayIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunPlayIOS.release.xcconfig"; path = "Target Support Files/Pods-FunPlayIOS/Pods-FunPlayIOS.release.xcconfig"; sourceTree = "<group>"; };
+		243ACF0F27E24965003EC7A2 /* FSWechatTagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSWechatTagModel.swift; sourceTree = "<group>"; };
+		243ACF1227E249FC003EC7A2 /* FSWechatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSWechatService.swift; sourceTree = "<group>"; };
+		243ACF1527E24A85003EC7A2 /* FSWechatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSWechatViewModel.swift; sourceTree = "<group>"; };
+		243ACF1827E2556A003EC7A2 /* FSWechatTagFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSWechatTagFilterView.swift; sourceTree = "<group>"; };
 		243FC65F27D7C64800078926 /* FunPlayIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunPlayIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		243FC66227D7C64800078926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		243FC66427D7C64800078926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +133,38 @@
 				1A589A68FF0078B96A151990 /* Pods-FunPlayIOS.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		243ACF0E27E24939003EC7A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				243ACF0F27E24965003EC7A2 /* FSWechatTagModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		243ACF1127E249E9003EC7A2 /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				243ACF1227E249FC003EC7A2 /* FSWechatService.swift */,
+			);
+			path = Wechat;
+			sourceTree = "<group>";
+		};
+		243ACF1427E24A78003EC7A2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				243ACF1527E24A85003EC7A2 /* FSWechatViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		243ACF1727E25526003EC7A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				243ACF1827E2556A003EC7A2 /* FSWechatTagFilterView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		243FC65627D7C64800078926 = {
@@ -271,6 +311,9 @@
 		243FC6B027D7CEC100078926 /* Wechat */ = {
 			isa = PBXGroup;
 			children = (
+				243ACF1727E25526003EC7A2 /* View */,
+				243ACF1427E24A78003EC7A2 /* ViewModel */,
+				243ACF0E27E24939003EC7A2 /* Model */,
 				243FC6B727D7CF5100078926 /* FSWechatViewController.swift */,
 			);
 			path = Wechat;
@@ -326,6 +369,7 @@
 		2455BC5E27DA55E700A3972E /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				243ACF1127E249E9003EC7A2 /* Wechat */,
 				2455BC6827DA60EE00A3972E /* Mine */,
 				2455BC5F27DA55F100A3972E /* NetWork */,
 			);
@@ -490,6 +534,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				243ACF1327E249FC003EC7A2 /* FSWechatService.swift in Sources */,
 				243FC6A027D7C76F00078926 /* CCBaseViewController.swift in Sources */,
 				243FC68327D7C73A00078926 /* CCLog.swift in Sources */,
 				243FC69A27D7C76800078926 /* UIColor+Addition.swift in Sources */,
@@ -497,12 +542,14 @@
 				245FE29227DF7CF800CFA88F /* FSMineSettingModel.swift in Sources */,
 				243FC69427D7C76800078926 /* UIImage+Addition.swift in Sources */,
 				243FC68527D7C73A00078926 /* CCNavigationTitleView.swift in Sources */,
+				243ACF1927E2556A003EC7A2 /* FSWechatTagFilterView.swift in Sources */,
 				243FC68727D7C73A00078926 /* CCActivityLoadingView.swift in Sources */,
 				243FC68427D7C73A00078926 /* CCUIConfig.swift in Sources */,
 				243FC69B27D7C76800078926 /* UIImageView+Addition.swift in Sources */,
 				243FC6BC27D7CF6B00078926 /* FSMineViewController.swift in Sources */,
 				2451C3E727DE499F00359BD9 /* FSLoginViewController.swift in Sources */,
 				243FC66727D7C64800078926 /* ViewController.swift in Sources */,
+				243ACF1627E24A85003EC7A2 /* FSWechatViewModel.swift in Sources */,
 				243FC6B827D7CF5100078926 /* FSWechatViewController.swift in Sources */,
 				2455BC6427DA5A1100A3972E /* FSMineInfoViewModel.swift in Sources */,
 				243FC68127D7C73A00078926 /* CCLocal.swift in Sources */,
@@ -519,6 +566,7 @@
 				243FC68227D7C73A00078926 /* CCHttp.swift in Sources */,
 				2455BC5A27DA46F100A3972E /* FSMineHeaderView.swift in Sources */,
 				243FC6B427D7CEFB00078926 /* FSHomeViewController.swift in Sources */,
+				243ACF1027E24965003EC7A2 /* FSWechatTagModel.swift in Sources */,
 				2455BC6727DA5A5A00A3972E /* FSConfig.swift in Sources */,
 				243FC6BA27D7CF6200078926 /* FSStructureViewController.swift in Sources */,
 				243FC69527D7C76800078926 /* UIFont+Addition.swift in Sources */,
